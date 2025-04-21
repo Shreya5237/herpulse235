@@ -1,4 +1,4 @@
-name: herpulse235
+name: herpulse1
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,15 +30,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-  google_fonts: ^6.1.0
-  provider: ^6.1.1
-  flutter_svg: ^2.0.7
-  intl: ^0.18.1
-  email_validator: ^2.1.17
-  animations: ^2.0.7
-  shared_preferences: ^2.2.2
+  firebase_core: ^2.5.0       # always the first one to initialize
+  firebase_auth: ^4.1.0       # if you need login/signup
+  cloud_firestore: ^4.0.0     # for NoSQL data
+  firebase_storage: ^11.0.0   # to upload/download files
+  firebase_messaging: ^14.0.0  # for push notifications
 
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
